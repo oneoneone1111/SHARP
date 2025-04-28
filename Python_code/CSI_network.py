@@ -13,7 +13,10 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
+'''
+python CSI_network.py "./doppler_traces/doppler_traces/doppler_traces/" "S1a" 100 340 1 32 4 single_ant "E,L,W,R,J"
 
+'''
 import argparse
 import numpy as np
 import pickle
