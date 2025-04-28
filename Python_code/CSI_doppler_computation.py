@@ -124,3 +124,13 @@ if __name__ == '__main__':
 
             with open(path_doppler_name, "wb") as fp:  # Pickling
                 pickle.dump(csi_d_profile_array, fp)
+#该代码主要是对无线通信中获得的CSI（Channel State Information）矩阵进行处理，计算多普勒频谱，并将结果保存到文件中。处理过程包括以下步骤：命令行参数解析：使用 argparse 解析输入的命令行参数，获取数据目录、子目录、带宽、噪声级别等信息。
+#读取CSI矩阵：从MAT文件中读取CSI矩阵，并进行处理，进行归一化。
+#选择子载波：根据指定的带宽（20 MHz、40 MHz、80 MHz）和子带选择合适的子载波。
+#应用Hanning窗：对每个窗口应用Hanning窗，以减少边缘效应。
+#计算多普勒频谱：通过FFT计算多普勒频谱并进行频谱移位。
+#去噪与归一化：根据噪声级别去除噪声并对频谱进行归一化处理。
+#保存结果：将处理后的多普勒频谱数据保存到指定的文件中。
+#该程序的核心目的是处理无线通信中收集到的CSI数据，并提取出多普勒频谱信息。
+#python CSI_doppler_computation.py ./processed_phase/ S1a,S1b,S1c,S2a,S2b,S3a,S4a,S4b,S5a,S6a,S6b,S7a ./doppler_traces/ 800 800 31 1 -1.2
+#python CSI_doppler_computation.py ./processed_phase/ S8a ./doppler_traces/ 800 800 31 1 -1.2   
