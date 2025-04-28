@@ -14,6 +14,10 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
+'''
+python CSI_network_metrics_plot.py complete_different_E,L,W,R,J_S7a_band_80_subband_1 E,L,W,R,J
+'''
+
 import argparse
 import numpy as np
 import pickle
