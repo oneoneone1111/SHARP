@@ -13,6 +13,18 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
+#命令行代码 python D:\11DHU\project\SHARP\CSI_doppler_plots_antennas.py ./doppler_traces/ S1a,S1b,S1c,S2a,S2b,S3a,S4a,S4b,S5a,S6a,S6b,S7a 100 1 E,L1,W,R,J1 20000
+
+#python CSI_doppler_plots_antennas.py ./doppler_traces/ S1a,S1b,S1c,S2a,S2b,S3a,S4a,S4b,S5a,S6a,S6b,S7a 100 1 E,L1,W,R,J1 20000
+#python CSI_doppler_plots_antennas.py ./doppler_traces/ S1a,S1b,S1c 100 1 E,L1,W,R,J1 20000
+#right:python CSI_doppler_plots_antennas.py ./doppler_traces/dopple_trace/dopple_trace/S1a 100 1 "E,L1,W,R,J1" 20000
+#python CSI_doppler_plots_antennas.py ./doppler_traces/ S1a 100 1 "E,L1,W,R,J1" 20000
+# python CSI_doppler_plots_antennas.py "./doppler_traces/dopple_trace/dopple_trace/S1a/" 100 1 "E,L1,W,R,J1" 20000
+# python CSI_doppler_plots_antennas.py "./doppler_traces/doppler_traces/doppler_traces/" "S1a" 100 1 "E,L1,W,R,J1" 20000
+# cd D:\11DHU\project\SHARP\SHARP-main\SHARP-main\Python_code
+#D:\11DHU\project\SHARP\SHARP-main\SHARP-main\Python_code\doppler_traces\doppler_traces\doppler_traces
+#最终正确的指令python CSI_doppler_plots_antennas.py "./doppler_traces/doppler_traces/doppler_traces/" "S1a" 100 1 "E,L1,W,R,J1" 20000
+#doppler_traces/doppler_traces/doppler_traces
 
 import argparse
 import numpy as np
