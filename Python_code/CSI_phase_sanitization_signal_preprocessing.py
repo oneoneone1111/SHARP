@@ -13,7 +13,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-
+'''
+python CSI_phase_sanitization_signal_preprocessing.py ../input_files/S1a/ 1 - 1 4 0
+'''
 import argparse
 import numpy as np
 import scipy.io as sio
