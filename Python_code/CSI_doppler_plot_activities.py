@@ -1,3 +1,13 @@
+#if len(doppler_spectrum_list[a_i]) > antenna:
+ #   act = doppler_spectrum_list[a_i][antenna]
+#else:
+#    print(f"Skipping index a_i={a_i}, antenna={antenna} due to insufficient data.")
+#上面从if开始的代码是新加的
+
+#最终正确的指令python CSI_doppler_plot_activities.py "./doppler_traces/doppler_traces/doppler_traces/" "S7a" 100 1 "E,L1,W,R,J1" 570 1070
+#注意，这里s7和s1的参数不一样，这里对应的是s7的参数,问题还是没有latex绘图
+# [-h] dir sub_dir feature_length sliding labels_activities start_plt end_plt
+#S8a的指令：python CSI_doppler_plot_activities.py "./doppler_traces/" "S8a" 100 1 "E,L1,W,R,J1" 570 1070
 
 import argparse
 import numpy as np
