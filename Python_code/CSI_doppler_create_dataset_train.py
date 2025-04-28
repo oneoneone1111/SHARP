@@ -13,7 +13,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
-
+#python CSI_doppler_create_dataset_train.py "./doppler_traces/doppler_traces/doppler_traces/" "S1a,S1b,S1c" 31 1 340 30 "E,L,W,R,J" 4
 import argparse
 import glob
 import os
